@@ -9,7 +9,7 @@ return (
     <Header />
    
     <div className="cardContainer">
-      {pizzas.map(pizza => <CardPizza key={pizza} name={pizza.name} price={pizza.price} img={pizza.img} ingredients={pizza.ingredients} description={pizza.desc} />)}
+      {pizzas.map(pizza => <CardPizza key={pizza.id} name={pizza.name} price={pizza.price} img={pizza.img} ingredients={pizza.ingredients} description={pizza.desc} />)}
     </div>
   </main>
 );
